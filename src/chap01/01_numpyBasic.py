@@ -77,10 +77,10 @@ for row in X:                   # for로 각 원소에 접금
 
 X = X.flatten()
 print(X)                        # [51 55 14 19  0  4] : 1차원 배열로 변환
-print(X[np.array([0,2,4])])     # [51 14  0]  : 인덱스가 0, 2, 4 인 원소 얻기
-print((X>15).dtype)             # bool
+print(X[np.array([0, 2, 4])])     # [51 14  0]  : 인덱스가 0, 2, 4 인 원소 얻기
+print((X > 15).dtype)             # bool
 print(X > 15)                   # [ True  True False  True False False]
-print(X[X>15])                  # [51 55 19]
+print(X[X > 15])                  # [51 55 19]
 
 
 
