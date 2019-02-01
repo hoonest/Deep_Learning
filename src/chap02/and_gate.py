@@ -11,6 +11,7 @@ def AND(x1, x2):
     else:
         return 1
 
+'''
 def and2(x1, x2):
     w1, w2, theta = 0.5, 0.5, 0.7
     tmp = x1*w1 + x2*w2
@@ -18,13 +19,14 @@ def and2(x1, x2):
         return 0
     elif tmp > theta:
         return 1
+'''
 
 if __name__ == '__main__':
     z = [(0,0), (1,0), (0,1), (1,1)]
     for xs in z:
         y = AND(xs[0], xs[1])
         print('AND-> ' + str(xs) + "->" + str(y))
-        print('-------------')
-        y = and2(xs[0], xs[1])
-        print('and2-> ' + str(xs) + "->" + str(y))
-        print('==============')
+        #print('-------------')
+        #y = and2(xs[0], xs[1])
+        #print('and2-> ' + str(xs) + "->" + str(y))
+        #print('==============')
