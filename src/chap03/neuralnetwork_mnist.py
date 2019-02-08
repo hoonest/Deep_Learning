@@ -3,7 +3,7 @@ sys.path.append(os.pardir)
 import numpy as np
 from dataset.mnist import load_mnist
 from sigmoid import sigmoid
-from softmax_function import softmax
+from notice_softmax import softmax_solution
 import pickle
 
 def get_data():
@@ -24,7 +24,7 @@ def predict(network, x):
     a2 = np.dot(z1, W2) + b2
     z2 = sigmoid(a2)
     a3 = np.dot(z2, W3) + b3
-    y = softmax(a3)
+    y = softmax_solution(a3)
     return y
 
 if __name__ == '__main__':

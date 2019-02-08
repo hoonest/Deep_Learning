@@ -15,8 +15,9 @@ def softmax_solution(a):
     return y
 
 
-a = np.array([1010, 1000, 990])
+if __name__ == '__main__':
+    a = np.array([1010, 1000, 990])
 
-#y = softmax(a)     # 너무 큰 수 overflow -> nan 발생
-y = softmax_solution(a)
-print(y)
+    #y = softmax(a)     # 너무 큰 수 overflow -> nan 발생
+    y = softmax_solution(a)
+    print(y)
