@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.pardir)
 import numpy as np
-from dataset.mnist import load_mnist
+from src.dataset.mnist import load_mnist
 from sigmoid import sigmoid
 from notice_softmax import softmax_solution
 import pickle
